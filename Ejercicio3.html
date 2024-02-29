@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Div Layout Exercise</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="container">
+    <div id="div1" class="box">DIV1</div>
+    <div id="div2" class="box">DIV2</div>
+    <div id="div3" class="box">DIV3</div>
+    <div id="div4" class="box">DIV4</div>
+    <div id="div5" class="box">DIV5</div>
+    <div id="div6" class="box">DIV6</div>
+    <div id="div7" class="box">DIV7</div>
+    <div id="div8" class="box">DIV8</div>
+    <div id="div9" class="box">DIV9</div>
+</div>
+</body>
+</html>
+
+<style>
+    body {
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+        background-color: #f7f7f7;
+    }
+
+    .container {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .box {
+        border: 2px solid black;
+        margin: 2px;
+        flex-grow: 1;
+        flex-basis: calc(33.333% - 4px);
+        height: 100px; /* You can adjust this value as needed */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        box-sizing: border-box;
+    }
+
+    /* You can add specific styles for individual divs if necessary */
+    #div1 { background-color: red; }
+    #div2 { background-color: green; }
+    #div3 { background-color: blue; }
+    #div4 { background-color: yellow; }
+    #div5 { background-color: purple; }
+    #div6 { background-color: orange; }
+    #div7 { background-color: pink; }
+    #div8 { background-color: cyan; }
+    #div9 { background-color: lime; }
+
+</style>
